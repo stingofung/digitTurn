@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Digiturno</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:300,400,900">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+    <body>
+        <div class="container">
+            <header>
+                <h3 class="vh">Laboratorio Clínico Blanco</h3>
+            </header>
+            <section class="main-content">
+                <div class="aside-left">
+                    <div class="queue-header">
+                        <div class="table vh">
+                            <div class="table-row">
+                                <div class="table-cell col-1"><h2>Paciente</h2></div>
+                                <div class="table-cell col-2"><h2>Box</h2></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-detail">
+                        <ul id="queue-list">
+                            <li>
+                                <div class='table'>
+                                    <div class='table-row'>
+                                        <div class='table-cell col-1'><h2>Zorinel Alicia Asuaje Torres</h2></div>
+                                        <div class='table-cell col-2'><h2>1</h2></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="table">
+                                    <div class="table-row">
+                                        <div class="table-cell col-1"><h2>Karen Lorena Fung Perez</h2></div>
+                                        <div class="table-cell col-2"><h2>2</h2></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="table">
+                                    <div class="table-row">
+                                        <div class="table-cell col-1"><h2>Luis Diaz Casanova Porres</h2></div>
+                                        <div class="table-cell col-2"><h2>3</h2></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="table">
+                                    <div class="table-row">
+                                        <div class="table-cell col-1"><h2>Miroslava Perez</h2></div>
+                                        <div class="table-cell col-2"><h2>4</h2></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="aside-right">
+                    <div id="display">
+                        <div class="video-content" style="display:none">
+                            <video id="video-player" onended="playVideo()">Tu navegador no implementa el elemento video.</video>
+                        </div>
+                        <div class="call-customer">
+                            <h2 class='label'>Paciente</h2>
+                            <h1 id='customerFullName' class='desc animated flash'>ZORINEL ALICIA ASUAJE TORRES</h1>
+                            <h2 class='label'>Box</h2>
+                            <h1 id='assignedBox' class='desc animated flash'>4</h1>
+                        </div>
+                    </div>
+                    <div class="clock">
+                        <div class="clock-content">
+                            <span id="date"></span>
+                            <span id="hour-content">
+                                <span id="hours">00</span>
+                                <span class="point">:</span>
+                                <span id="min">00</span>
+                                <span class="point">:</span>
+                                <span id="sec">00</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <ul id="marquee-content">
+                    <li><h3 class="vh">Sucursal Santiago: Salvador 31-41-65-149, Providencia, Fono: 24905500 </h3></li>
+                    <li><h3 class="vh">Sucursal Antofagasta: Manuel Antonio Matta 1839 Of. 301, Edificio Obelisco, Fono: 55 2458600-01</h3></li>
+                </ul>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.marquee.js"></script>
+        <script type="text/javascript" src="js/flowtype.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

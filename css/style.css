@@ -1,0 +1,288 @@
+﻿/********
+* Reset *
+*********/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**************
+* Main styles *
+***************/
+@font-face {
+    font-family: 'BebasNeueRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');   
+}
+html, body {
+    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    height: 100%;
+    overflow: hidden;
+}
+h1 {
+    /*font-size: 18.5vh;*/ /* 3 row for the full Name */
+    font-size: 25vh;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    color: #ffffff;
+    font: normal 8vh 'Roboto', Arial, Helvetica, sans-serif;
+}
+ul {
+     min-height:100%;
+}
+
+.table {
+    display: table; 
+    width: 100%; 
+}
+.table-row {
+    display: table-row;
+}
+.table-cell {
+    display: table-cell;
+}
+.vh {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+.container {
+    margin:0 auto; 
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vh;   
+}
+header {
+    background-color: #0a4958;
+    height: 10vh;
+    text-align: center; 
+    width: 100%;    
+    /*text-shadow: 2px 2px 8px #000000;*/
+}
+.main-content {
+    background-color: #ffffff;
+    height: 80vh;
+    min-width: 100%;
+}
+
+/* Call queue */
+.aside-left {
+    float: left;
+    height: 100%;
+    width: 30%;  
+}
+.queue-header {
+    background-color: #05313b;
+    color: #ffffff;
+    height: 10%; 
+    width: 100%;
+}
+.queue-header h2 {
+    line-height: 0.6em !important;
+    padding-top: 0.1em;
+}
+.queue-header .col-1 {
+    float: left;
+    width: 80%;
+}
+.queue-header .col-2 {
+    float: right;
+    width: 15%;
+    text-align:center;
+}
+
+.queue-detail {
+    height: 90%;  
+}
+.queue-detail .table-cell {
+    padding: 14px 0 10px 0;
+}
+.queue-detail h2 {
+    line-height: 0.8em;
+}
+.queue-detail li {
+    height: 175px;
+}
+.queue-detail .col-1 {
+    border-top: 1px solid #0a4958;
+    color: #212121; 
+    font-size: 1.3em;
+    width: 80%;   
+}
+.queue-detail .col-2 {
+    border-top: 1px solid #0a4958;
+    color: red;
+    font-size: 2.7em;
+    line-height: 4.2em;
+    text-align: center;
+    width: 15%;
+}
+.queue-detail .col-2 h2 {
+    line-height: 0em !important;
+    margin-top: 0.6%;
+    margin-left: 0.4%;
+    position: absolute;
+}
+
+/* Display zone + clock */
+.aside-right {
+    float: right;
+    height: 100%;
+    width: 70%;
+}
+#display {
+    /*background-color: #000000;*/
+    height: 90%;
+    text-align: center;  
+}
+.video-content {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;   
+}
+video {
+    height: 100%;
+}
+.call-customer {
+    background-color: #ffffff;
+    border-left: 1px solid #0a4958;
+    /*display: none;*/
+    height: 100%;
+    padding: 15px;
+}
+.call-customer h1.desc{
+    color: red;
+    /*line-height: 14vh;*/ /*  3 row for the full Name */
+    line-height: 19vh;
+    padding: 0 0 1vh 0;
+    animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 3;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 3;
+}
+.call-customer h2.label{
+    color: #000000;
+    padding: 2vh 0 4vh 0;
+    line-height: 0vh;
+}
+
+.clock {
+    background-color: #b2b2b2;
+    height: 10%;
+    text-align: center;
+    width: 100%;
+}
+.clock-content {
+    height: 100%;
+    width: 100%;
+}
+.clock span {
+    color: #212121;
+    line-height: 8.7vh;
+    font-size: 8vh;
+}
+#hour-content {
+    padding-left: 2%;
+}
+.point {
+    position: relative;
+    -moz-animation: mymove 1s ease infinite;
+    -webkit-animation: mymove 1s ease infinite;
+}
+
+footer {
+    background-color: #0a4958;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    position: absolute; 
+}
+footer #marquee-content {
+    padding: 0 15px;   
+}
+footer #marquee-content li {
+    float: left;
+    height: 10vh;
+    list-style-type: none;
+    margin: 0 auto;
+}
+footer #marquee-content h3:after {
+  content: "|";
+  margin: 0 0.5em;
+}
+
+/* Simple animation */
+@-webkit-keyframes mymove {
+    0% {
+        opacity:1.0;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1.0;
+    }	
+}
+@-moz-keyframes mymove {
+    0% {
+        opacity:1.0;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1.0;
+    }
+}
